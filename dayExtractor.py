@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
-#FUNCTIONS
+#FUNCTIONS 
 def select_canal(option,driver):
     comercial_selection = driver.find_element(by=By.NAME, value="prod") #geting the comercial element
     select_comercial = Select(comercial_selection)
