@@ -1,3 +1,4 @@
+#IMPORTANTE: Esse script requer que tenha o chrome instalado
 import time
 import os
 from selenium import webdriver
@@ -72,6 +73,8 @@ for year in range(2007,2023):
         click_submit(driver)
         click_download(driver)
         print("Baixando o arquivo de",year,"canal",canal,"...")
+
+print("Terminei!")
 
 time.sleep(300)#wait for file finish download
 driver.quit()
